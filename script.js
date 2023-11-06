@@ -18,3 +18,8 @@ const paddleSpeed = 40;
 let intervalID; ////// used to repeat a certian function at given time-interval///////
 let ballSpeed = 1;
 /////////////////// Coordinates of ball /////////////////
+let ballxaxis = gameWidth / 2;
+let ballyaxis = gameHeight / 2;
+//////////////// direction the ball goes ////////////////////
+let ballxaxisDirection = 0;
+let ballyaxisDirection = 0;
