@@ -7,9 +7,13 @@ const resetButton = document.querySelector("#resetButton");
 //// need game width/height in variable so i can access them ////////
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-
-/////// create game objects and select my colors for game in CSS //////
-
+///////////////// select my colors ////////////////////
+const boardBackground = "lightblue";
+const paddle1Color = "red";
+const paddle2Color = "green";
+const paddleBorder = "black";
+const ballColor = "gold";
+const ballBoarderColor = "black"
 ///////////// make ball size(I'll make it a const) /////////////
 const ballRadius = 10.5;
 ///////// how far paddles moves after hitting button ////////////
@@ -44,12 +48,20 @@ window.addEventListener("keydown", changeDirection)
 resetButton.addEventListener("click", resetGame);
 /////////////// create my functions now //////////////////
 startGame();
+makePaddles()
 
+////// paddle function/////
+function makePaddles(){
+    ctx.strokeStyle = paddleBorder;
+    ctx.fillStyle = paddle1Color
+    ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height ); //// coordinates of paddle1/////
+};
+/////// makeball function ////////
+function makeball(){};
+//////
 function startGame(){};
 function timeskip(){};
 function eraseBoard(){};
-function makePaddles(){};
-function makeball(){};
 function moveball(){};
 function drawball(){};
 function checkImpact(){};
