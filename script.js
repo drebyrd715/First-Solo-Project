@@ -7,10 +7,9 @@ const resetButton = document.querySelector("#resetButton");
 //// need game width/height in variable so i can access them ////////
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
+
 /////// create game objects and select my colors for game in CSS //////
-let paddle1 = paddle1;
-let paddle2 = paddle2;
-let ball = ball;
+
 ///////////// make ball size(I'll make it a const) /////////////
 const ballRadius = 10.5;
 ///////// how far paddles moves after hitting button ////////////
@@ -23,3 +22,21 @@ let ballyaxis = gameHeight / 2;
 //////////////// direction the ball goes ////////////////////
 let ballxaxisDirection = 0;
 let ballyaxisDirection = 0;
+///////////// Define playerScore/////////////////
+let player1Score = 0;
+let player2Score = 0;
+//////////// Define 2 paddle objects //////////////
+let paddle1 ={
+    width: 25,
+    height: 90,
+    x: 0,
+    y: 0
+}
+let paddle2 ={
+    width: 25,
+    height: 90,
+    x: gameWidth -20,
+    y: gameHeight -90
+}
+
+
