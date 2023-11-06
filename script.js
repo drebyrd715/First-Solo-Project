@@ -1,3 +1,5 @@
+////////// using all const so I can use them later /////////////
+///////// trying to avoid css as much as possible //////////////
 //////////////// DECLARE ALL MY CONST ////////////////////
 const gameBoard = document.querySelector("#gameBoard");
 ////// ctx is what we draw on ////////
@@ -54,7 +56,7 @@ makePaddles()
 function makePaddles(){
     ctx.strokeStyle = paddleBorder;
 // fillRect= draws a filled rectangle /// strokeRect= puts rectangle on canvas///// 
-// got from W3 schools because i used canvas /////////
+// got from W3 schools because I used canvas in html/////////
     ctx.fillStyle = paddle1Color;
     ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height); //// coordinates of paddle1/////
     ctx.StrokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
