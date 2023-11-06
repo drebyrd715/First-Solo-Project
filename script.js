@@ -42,4 +42,20 @@ let paddle2 ={
 ////////// add event listener to reset button as well ///////////////////
 window.addEventListener("keydown", changeDirection)
 resetButton.addEventListener("click", resetGame);
+/////////////// create my functions now //////////////////
+startGame();
+
+function startGame(){};
+function timeskip(){};
+function eraseBoard(){};
+function makePaddles(){};
+function makeball(){};
+function moveball(){};
+function drawball(){};
+function checkImpact(){};
+function changeDirection(){};
+function updateScore(){};
+function resetGame(){};
+
+
 
