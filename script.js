@@ -34,7 +34,7 @@ let paddle1 ={
     width: 18,
     height: 90,
     x: 0,
-    y: 0
+    y: 0,
 }
 let paddle2 ={
     width: 18,
@@ -56,12 +56,12 @@ function makePaddles(){
 // fillRect= draws a filled rectangle /// strokeRect= puts rectangle on canvas///// 
 // got from W3 schools because i used canvas /////////
     ctx.fillStyle = paddle1Color;
-    ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height ); //// coordinates of paddle1/////
-    ctx.StrokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height );
+    ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height); //// coordinates of paddle1/////
+    ctx.StrokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
 
     ctx.fillStyle = paddle2Color;
-    ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height ); //// coordinates of paddle2/////
-    ctx.StrokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height );
+    ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height); //// coordinates of paddle2/////
+    ctx.StrokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
 };
 /////// makeball function ////////
 function makeball(){};
