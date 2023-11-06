@@ -38,5 +38,8 @@ let paddle2 ={
     x: gameWidth -20,
     y: gameHeight -90
 }
-
+/////////// add eventlister to whole window to hear keydown events////////
+////////// add event listener to reset button as well ///////////////////
+window.addEventListener("keydown", changeDirection)
+resetButton.addEventListener("click", resetGame);
 
