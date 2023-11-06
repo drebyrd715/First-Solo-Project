@@ -31,16 +31,16 @@ let player1Score = 0;
 let player2Score = 0;
 //////////// Define 2 paddle objects //////////////
 let paddle1 ={
-    width: 25,
+    width: 18,
     height: 90,
     x: 0,
     y: 0
 }
 let paddle2 ={
-    width: 25,
+    width: 18,
     height: 90,
-    x: gameWidth -20,
-    y: gameHeight -90
+    x: gameWidth -18,
+    y: gameHeight -90,
 }
 /////////// add eventlister to whole window to hear keydown events////////
 ////////// add event listener to reset button as well ///////////////////
@@ -53,8 +53,15 @@ makePaddles()
 ////// paddle function/////
 function makePaddles(){
     ctx.strokeStyle = paddleBorder;
-    ctx.fillStyle = paddle1Color
+// fillRect= draws a filled rectangle /// strokeRect= puts rectangle on canvas///// 
+// got from W3 schools because i used canvas /////////
+    ctx.fillStyle = paddle1Color;
     ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height ); //// coordinates of paddle1/////
+    ctx.StrokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height );
+
+    ctx.fillStyle = paddle2Color;
+    ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height ); //// coordinates of paddle2/////
+    ctx.StrokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height );
 };
 /////// makeball function ////////
 function makeball(){};
