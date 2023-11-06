@@ -3,6 +3,7 @@
 }
 #gameBoard{
     border: 2px solid;
+    background-color: lightblue;
 }
 #scoreBoard{
     font-size: 60px;
@@ -13,4 +14,16 @@
     height: 30px;
     border: solid red;
     border-radius: 30px;
+}
+paddle1{
+    color: red;
+    border: black;
+}
+paddle2{
+    color: green;
+    border: black;
+}
+ball{
+    color: gold;
+    border: black;
 }
