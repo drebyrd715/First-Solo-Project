@@ -9,13 +9,13 @@ const resetButton = document.querySelector("#resetButton");
 //// need game width/height in variable so i can access them ////////
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-///////////////// select my colors ////////////////////
+///////////////// select my colors as variables to call them ////////////////////
 const boardBackground = "lightblue";
 const paddle1Color = "red";
 const paddle2Color = "green";
 const paddleBorder = "black";
 const ballColor = "gold";
-const ballBoarderColor = "black"
+const ballBorderColor = "black"
 ///////////// make ball size(I'll make it a const) /////////////
 const ballRadius = 10.5;
 ///////// how far paddles moves after hitting button ////////////
@@ -50,8 +50,12 @@ window.addEventListener("keydown", changeDirection)
 resetButton.addEventListener("click", resetGame);
 /////////////// create my functions now //////////////////
 startGame();
-makePaddles()
 
+///// When game starts what happens?//////////
+function startGame(){
+    makeball();
+    timeskip();
+};
 ////// paddle function/////
 function makePaddles(){
     ctx.StrokeStyle = paddleBorder;
@@ -60,16 +64,16 @@ function makePaddles(){
     ctx.fillStyle = paddle1Color;
     ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height); //// coordinates of paddle1/////
     ctx.strokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
-/// make sure the s in (strokeRect is lowercase)took me 2 hours o find this little problem smh
+/// make sure the S in (strokeRect is lowercase)took me 2 hours o find this little problem smh
     ctx.fillStyle = paddle2Color;
     ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height); //// coordinates of paddle2/////
     ctx.strokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
 };
 /////// makeball function ////////
 function makeball(){};
-//////
-function startGame(){};
-function timeskip(){};
+////// timeskip (paddle movement)//////
+function timeskip(){
+};
 function eraseBoard(){};
 function moveball(){};
 function drawball(){};
