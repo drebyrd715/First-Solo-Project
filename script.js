@@ -1,4 +1,4 @@
-////////// using all const so i can use them later /////////////
+////////// using all const so I can use them later /////////////
 ///////// trying to avoid css as much as possible //////////////
 //////////////// DECLARE ALL MY CONST ////////////////////
 const gameBoard = document.querySelector("#gameBoard");
@@ -6,7 +6,7 @@ const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d") //game in 2d//
 const scoreBoard = document.querySelector("#scoreBoard");
 const resetButton = document.querySelector("#resetButton");
-//// need game width/height in variable so i can access them ////////
+//// need game width/height in variable so I can access them ////////
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
 ///////////////// select my colors as variables to call them ////////////////////
@@ -71,7 +71,7 @@ function makePaddles(){
 };
 /////// makeball function ////////
 function makeball(){};
-////// timeskip (paddle movement) use call back//////
+////// call my function after a cdrtain timeframe//////
 function timeskip(){
     intervalID = setTimeout(() => {
         eraseBoard();
@@ -82,7 +82,11 @@ function timeskip(){
         timeskip();  //// use timeskip again to make next round////
     }, 15) ///// this number is how often the process repeats///// 
 };
-function eraseBoard(){};
+////////// Get background /////////////////
+function eraseBoard(){
+    ctx.fillStyle = boardBackground;
+    ctx.fillRect(0, 0, gameWidth, gameHeight); 
+};
 function moveball(){};
 function drawball(){};
 function checkImpact(){};
