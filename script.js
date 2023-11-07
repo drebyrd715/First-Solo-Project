@@ -106,6 +106,12 @@ function changeDirection(event){ /// our parameter is event///
         case(paddle1Down):
         paddle1.y += paddleSpeed;
         break;
+        case(paddle2Up):
+        paddle2.y -= paddleSpeed;
+        break;
+        case(paddle2Down):
+        paddle2.y += paddleSpeed;
+        break;
     }
 };
 function updateScore(){};
