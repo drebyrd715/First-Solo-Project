@@ -93,7 +93,10 @@ function checkImpact(){};
 //////// in charge of moving paddles ////////
 function changeDirection(event){ /// our parameter is event///
     const keyPressed = event.keyCode; /// find the number linked to keyboard///
-    console.log(keyPressed)
+    const paddle1Up = 80;
+    const paddle1Down = 70;
+    const paddle2Up = 38;
+    const paddle2Down = 40;
 };
 function updateScore(){};
 function resetGame(){};
