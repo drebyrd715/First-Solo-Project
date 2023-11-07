@@ -71,8 +71,16 @@ function makePaddles(){
 };
 /////// makeball function ////////
 function makeball(){};
-////// timeskip (paddle movement)//////
+////// timeskip (paddle movement) use call back//////
 function timeskip(){
+    intervalID = setTimeout(() => {
+        eraseBoard();
+        makePaddles();
+        moveball();
+        makeball(ballxaxis, ballyaxis);
+        checkImpact();
+        timeskip();  //// use timeskip again to make next round////
+    })
 };
 function eraseBoard(){};
 function moveball(){};
