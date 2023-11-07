@@ -90,7 +90,11 @@ function eraseBoard(){
 function moveball(){};
 function drawball(){};
 function checkImpact(){};
-function changeDirection(){};
+//////// in charge of moving paddles ////////
+function changeDirection(event){ /// our parameter is event///
+    const keyPressed = event.keyCode; /// find the number linked to keyboard///
+    console.log(keyPressed)
+};
 function updateScore(){};
 function resetGame(){};
 
