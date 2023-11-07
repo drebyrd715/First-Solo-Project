@@ -1,4 +1,4 @@
-////////// using all const so I can use them later /////////////
+////////// using all const so i can use them later /////////////
 ///////// trying to avoid css as much as possible //////////////
 //////////////// DECLARE ALL MY CONST ////////////////////
 const gameBoard = document.querySelector("#gameBoard");
@@ -54,16 +54,16 @@ makePaddles()
 
 ////// paddle function/////
 function makePaddles(){
-    ctx.strokeStyle = paddleBorder;
+    ctx.StrokeStyle = paddleBorder;
 // fillRect= draws a filled rectangle /// strokeRect= puts rectangle on canvas///// 
 // got from W3 schools because I used canvas in html/////////
     ctx.fillStyle = paddle1Color;
     ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height); //// coordinates of paddle1/////
-    ctx.StrokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
-
+    ctx.strokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+/// make sure the s in (strokeRect is lowercase)took me 2 hours o find this little problem smh
     ctx.fillStyle = paddle2Color;
     ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height); //// coordinates of paddle2/////
-    ctx.StrokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+    ctx.strokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
 };
 /////// makeball function ////////
 function makeball(){};
