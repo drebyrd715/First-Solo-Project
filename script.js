@@ -80,7 +80,7 @@ function timeskip(){
         makeball(ballxaxis, ballyaxis);
         checkImpact();
         timeskip();  //// use timeskip again to make next round////
-    })
+    }, 15) ///// this number is how often the process repeats///// 
 };
 function eraseBoard(){};
 function moveball(){};
