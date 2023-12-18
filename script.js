@@ -93,10 +93,11 @@ function checkImpact(){};
 //////// in charge of moving paddles ////////
 function changeDirection(event){ /// our parameter is event///
     const keyPressed = event.keyCode; /// find the number linked to keyboard///
-    const paddle1Up = 82;
-    const paddle1Down = 70;
+    const paddle1Up = 87;
+    const paddle1Down = 83;
     const paddle2Up = 38;
     const paddle2Down = 40;
+    console.log(keyPressed)
 ///// use switch to check key pressed///////
 //// case goes along with switch sort of like different instances////
     switch(keyPressed){
